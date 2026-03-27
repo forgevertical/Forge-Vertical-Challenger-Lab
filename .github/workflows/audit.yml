@@ -1,0 +1,22 @@
+name: Forge-Vertical-Audit-Task
+
+on:
+  pull_request_target:
+    types: [opened, synchronize]
+
+jobs:
+  validate-contribution:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.pull_request.head.sha }} # The "Demon" controls this
+
+      - name: Run Security Linter
+        env:
+          FORGE_SECRET_FLAG: ${{ secrets.FORGE_FLAG }} # The "Loot"
+        run: |
+          echo "Starting Forge Vertical automated linting..."
+          # Submitting a PR with a modified linter.sh allows for command injection
+          bash ./scripts/linter.sh
