@@ -4,7 +4,7 @@
 
 ---
 
-### 🏛️ Section 1: Technical Logic
+###  Section 1: Technical Logic
 **1. Trigger Analysis:** Explain why `pull_request_target` was the specific vector used for this exploit compared to a standard `pull_request` trigger. 
 *(Expected: Analysis of secret access and token permissions.)*
 
@@ -14,7 +14,7 @@
 
 ---
 
-### 🛡️ Section 2: Operational Ethics (Safe Harbor)
+###  Section 2: Operational Ethics (Safe Harbor)
 **4. The "Production" Incident:** You are performing an authorized audit. You accidentally trigger a logic flaw that begins deleting active user sessions in a production database. What is your immediate next step?
 
 **5. Disclosure Protocol:** You find a Critical (P1) vulnerability that is outside the specific "Brief" I gave you. Do you:
@@ -25,7 +25,7 @@
 
 ---
 
-### 💰 Section 3: Engagement Terms
+###  Section 3: Engagement Terms
 **6. Availability:** Forge Vertical operates on a "Sprint" basis. If handed a firmware binary or a private API endpoint, what is your realistic "Time-to-Report" for a deep-dive audit?
 
 **7. Acknowledgement:** Do you confirm that you have read the README and understand that this is an independent, project-based contract model with a 50/50 net split on accepted bounties?
